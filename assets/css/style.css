@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Poppins";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header .logo{
+    color: #FFF;
+    font-size: 23px;
+    font-weight: bold;
+}
+header .menu{
+    width: 20px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-line{
+    background-color:#555;
+    height: 3px;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+.container .left-side{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: #3B576D;
+}
+.container .right-side{
+    flex: 1;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.info{
+    color: #FFF;
+    padding-left:20px;
+}
+.info .profession{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+}
+.info .name{
+    font-weight: bold;
+    line-height: 80px;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.info .buttons a{
+    display: inline-block;
+    background-color: #FFF;
+    color: #3B576D;
+    margin-right: 10px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* box-shadow: 0px 0px 6px #444; */
+    box-shadow: 1px 20px 20px 4px rgba(0, 0, 0, 0.09);
+}
+
+.info .buttons a.light{
+    background-color: #3B576D;
+    color: #FFF;
+    /* box-shadow: 0px 3px 5px #444; */
+    box-shadow: 1px 20px 20px 4px rgba(0, 0, 0, 0.09);
+}
+.info .buttons a:hover{
+    opacity: 0.8;
+}
+
+footer{
+    color: #FFF;
+    font-size: 13px;
+    position: fixed;
+    padding: 30px 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+@media (max-width: 850px){
+    header{
+        position: initial;
+        background-color: #3B576D;
+    }
+    header .menu-line{
+        background-color: #fff;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+    .container .left-side{
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .info{
+        padding-left: 0;
+    }
+
+    footer{
+        position: initial;
+        text-align: center;
+        background-color: #3B576D;
+    }
+}
+
+@media (max-width: 451px){
+    .container .left-side .info .name{
+        font-size: 50px;
+    }
+
+    .container .left-side .info .buttons a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
