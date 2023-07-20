@@ -134,6 +134,14 @@ footer{
 }
 
 @media (max-width: 451px){
+    .container{
+        height: auto;
+    }
+
+    .container .right-side{
+        height: 100vh;
+        flex: none;
+    }
     .container .left-side .info .name{
         font-size: 50px;
     }
